@@ -1,48 +1,125 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="Jordi Garrigó" content="Receta de cocina, initial-scale=1.0">
-    <title>FORMULARIO| Jordi Garrigó</title>
-    <link rel="stylesheet" href="formulari.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Sabores de Casa</title>
+  <link rel="stylesheet" href="formulari.css">
 </head>
 
-<body>
+ <header>
+    <h1>🍴 Sabores de Casa</h1>
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="Boton.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+   <main>
+    <form>
 
-    <ol>
-        <h1>Inicio</h1>
-        <li>
-            <form method="post" action="#">
-                <label for=""> - Nombre: </label>
-                <input name="nom" type=" text" />
-                <br><br>
-        </li>
-        <li>
-            <form method="post" action="#">
-                <label for="">- Apellidos: </label>
-                <input name="apellidos" type=" text" />
-                <br>
-        </li>
-        <h2>ELIGE LA SIGUIENTE RECETA </h2>
-        <li>
-            <input name="numero" type="radio" value="Un">Tacos al Pastor<label for="UNO"></label><br>
-            <input name="numero" type="radio" value="DoS">Lasaña a la Boloñesa<label for="DOS"></label> <br>
-            <input name="numero" type="radio" value="treS">Cebiche Peruano<label for="TRES"></label><br>
-            <br>
-        </li>
-        <input type="submit" value="ENVIAR">
-        <h3>RECOMENDACIONES DEL USUARIO</h3>
-        <li>
-            <textarea name="message"  cols="90" rows="10">
-                        </textarea>
-        </li>
+    <h2>Contáctanos</h2>
+  <fieldset>
+        <legend>🧑‍🍳 Tus datos</legend>
+         <div>
+          <div>
+            <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div><br>
+          <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos">
+          </div><br>
+          <div >
+            <label for="email">Correo electrónico <span class="obligatorio">*</span></label>
+            <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+          </div><br>
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" pattern="[0-9 +]{9,15}">
+          </div>
+        </div>
+      </fieldset>
 
 
-    </ol>
+       <fieldset>
+        <legend>🍽️ Tu visita</legend>
+        <div>
+            <label for="comensales">Número de comensales</label>
+            <input type="number" id="comensales" name="comensales" min="1" max="20" value="2">
+          </div><br>
+          <div>
+            <label for="menu">Tipo de plato</label>
+            <select id="menu" name="menu">
+              <option value="">-- Elige una opción --</option>
+              <option value="carta">Cocina asiatica</option>
+              <option value="degustacion">Cocina mediterranea</option>
+              <option value="diario">Cocina mexicana</option>
+              <option value="infantil">Cocina italiana</option>
+            </select>
+        </div><br>
+        <div>
+          <label>Tu plato favorito</label>
+          <div>
+            <label><input type="radio" name="plato" value="carne" checked> 🥩 Carne</label>
+            <label><input type="radio" name="plato" value="pescado"> 🐟 Pescado</label>
+            <label><input type="radio" name="plato" value="vegetariano"> 🥗 Vegetariano</label>
+            <label><input type="radio" name="plato" value="postre"> 🍰 Postres</label>
+          </div><br>
+        </div>
+
+        <div>
+          <label>Alergias o intolerancias</label>
+          <div>
+            <label><input type="checkbox" name="alergia" value="gluten"> Gluten</label>
+            <label><input type="checkbox" name="alergia" value="lactosa"> Lactosa</label>
+            <label><input type="checkbox" name="alergia" value="frutos-secos"> Frutos secos</label>
+            <label><input type="checkbox" name="alergia" value="marisco"> Marisco</label>
+          </div>
+        </div>
+      </fieldset>
+
+           <fieldset>
+        <legend>💬 Tu mensaje</legend>
+        <div>
+          <label for="mensaje">Comentarios <span class="obligatorio">*</span></label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuentanos qué plato te gustaria que fuese el siguiente..." required></textarea>
+        </div>
+        <div>
+          <label><input type="checkbox" name="privacidad" value="si" required> Acepto la política de privacidad <span class="obligatorio">*</span></label>
+        </div>
+      </fieldset>
+         <div class="botones">
+        <button type="submit">Enviar mensaje</button>
+        <button type="reset">Borrar formulario</button>
+      </div>
     </form>
-</body>
-
-
-
-</html>
+       <div class="leyenda">
+      <span >✔Disponible</span>
+      <br>
+      <span >✘Ocupado</span>
+    </div>
+    <div>
+      <table>
+        <caption>Horario de contacto</caption>
+        <thead>
+          <tr>
+            <th >Día</th>
+            <th >Disponibilidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th >Lunes</th>     <td class="no">✔ </td></tr>     
+          <tr><th>Martes</th>    <td class="si">✔ </td></tr>     
+          <tr><th>Miércoles</th> <td class="si">✔ </td></tr>       
+          <tr><th >Jueves</th>    <td class="si">✔ </td></tr>       
+          <tr><th >Viernes</th>   <td class="si">✔ </td></tr>       
+          <tr><th>Sábado</th>    <td class="parcial">✘ </td></tr>
+          <tr><th >Domingo</th>   <td class="si">✘ </td></tr>    
+        </tbody>
+      </table>
+    </div>
+  </main>
+   <footer>
+    <p>© 2024 Sabores de Casa. Todos los derechos reservados.</p>
+    </footer>
+    </html>

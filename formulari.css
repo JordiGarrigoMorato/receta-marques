@@ -1,26 +1,140 @@
-h1,h2,h3 {
-    padding: 20px 50px; 
-}
 
 html{
-    background-image: url("Imagenes/fondo3.jpeg");
+    image-background: url("Imagenes/fondo.jpg");
     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     margin: 0;
-    height: 100vh;
+    background-size: cover;
 }
-label{
-       background-color:rgb(255, 255, 255);
-       color: rgb(8, 0, 0);
-       border-radius: 20px;
-       margin-right: 20px;
+nav {
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
-input ,textarea{
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
 
-    background-color:#eaffff;
-    border-color: rgb(0, 0, 0);
-    border-width: 3px;
+body {
+    background-color: #ffffff;
+    font-family: calibri, sans-serif;
+    margin: 0;
 
+}
+
+header {
+    background-color: #0d8397dc;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+}
+
+form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+fieldset {
+    border: 1px solid #cdd5c0;
+    border-radius: 6px;
+    margin: 0 0 1.25px;
+    padding: 1px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0d8397dc;
+    padding: 0 .5rem;
+}
+
+h1 {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 50px;
+}
+
+h2,h3,h4,h5 {
+    color: #0d8397dc;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+.obligatorio {
+    color: tomato;
+    font-weight: bold;
+}
+
+label {
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 0, 0);
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+select,
+textarea {
+    border: 1px solid #aab49b;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    background-color: #0d8397dc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button[type=reset] {
+    background: tomato;
+} 
+
+.leyenda {
+    font-weight: bold;
+    color: #000607dc;
+    padding: 20px;
+}
+
+ caption {
+    caption-side: bottom;
+     padding: .5rem;
+      font-size: .85rem;
+       color: #555;
+ }
+
+ th {
+    background-color: #0d8397dc;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+
+}
+td {
+    padding: 10px;
+    border-radius: 6px;
+    border-bottom: 3px solid#0d8397dc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-image: url("Imagenes/fondo.jpg");
+    background-position: center;
+    margin-bottom: 20px;
+    background-size: cover;
 }

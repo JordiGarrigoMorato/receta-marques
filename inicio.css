@@ -1,0 +1,88 @@
+
+body {
+    background-color: #ffffff;
+    font-family: calibri, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #0d8397dc;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+header h1 {
+    background-color: #2f93a7;
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+    border-radius: 0 0 12px 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 50px;
+}
+
+main {
+    padding: 20px 50px;
+}
+
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.galeria li {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: none;
+    border-bottom: 4px solid #0d8397dc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(13, 131, 151, 0.4);
+}
+
+.galeria a {
+    display: block;
+}
+
+.galeria img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+footer {
+    background-image: url("Imagenes/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(2, 2, 2);
+    font-weight: 600;
+}
