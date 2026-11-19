@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="Jordi Garrigó" content="Receta de cocina, initial-scale=1.0">
@@ -20,12 +21,14 @@
         <h1>Jordi Garrigó</h1>
         <p>Cocinero de cocina casera</p>
 
-        
+
         <img src="Imagenes/cocina.jpg" alt="Retrato de Jordi Garrigó en la cocina" width="220" height="220">
     </header>
 
     <main>
-                <h2 id="sobre-mi">Sobre mí</h2>
+        <section class="dos-col">
+            <div class="tarjeta" id="sobre-mi">
+                <h2>Sobre mí</h2>
                 <p>
                     Me llamo Jordi, cocinero reciente que empieza a preparar platos en casa.
                     Me gusta la cocina sencilla, con pocos ingredientes y mucho sabor.
@@ -34,50 +37,65 @@
                     En esta web comparto mis recetas paso a paso para que cualquiera pueda cocinarlas,
                     aunque sea la primera vez que entra en la cocina.
                 </p>
+            </div>
 
-          
-                <h2 >Ficha del cocinero</h2>
+            <div class="tarjeta">
+                <h2>Ficha del cocinero</h2>
                 <table>
                     <caption>Datos principales</caption>
-                        <tr>
-                            <th>Nombre</th>
-                            <td>Jordi Garrigó</td>
-                        </tr>
-                        <tr>
-                            <th>Estilo</th>
-                            <td>Cocina casera y mediterránea</td>
-                        </tr>
-                        <tr>
-                            <th>Años de experiencia</th>
-                            <td>1 año</td>
-                        </tr>
-                        <tr>
-                            <th>Idiomas</th>
-                            <td>Catalán, castellano,inglés y francés</td>
-                        </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>Jordi Garrigó</td>
+                    </tr>
+                    <tr>
+                        <th>Estilo</th>
+                        <td>Cocina casera y mediterránea</td>
+                    </tr>
+                    <tr>
+                        <th>Años de experiencia</th>
+                        <td>1 año</td>
+                    </tr>
+                    <tr>
+                        <th>Idiomas</th>
+                        <td>Catalán, castellano,inglés y francés</td>
+                    </tr>
                 </table>
-                <h2 id="especialidades">Especialidades</h2>
+            </div>
+        </section>
+
+        <section class="dos-col">
+            <div class="tarjeta" id="especialidades">
+                <h2>Especialidades</h2>
                 <ul>
                     <li>Pollo en salsa y guisos tradicionales</li>
                     <li>Arroces y paellas</li>
                     <li>Pasta fresca</li>
                     <li>Postres sencillos</li>
                 </ul>
-                <h2 id="trayectoria">Trayectoria</h2>
+            </div>
+            <div class="tarjeta" id="trayectoria">
+                <h2>Trayectoria</h2>
                 <ol>
                     <li><strong>2020:</strong> primeros platos en la cocina familiar.</li>
                     <li><strong>2024:</strong> curso de cocina básica.</li>
                     <li><strong>2025:</strong>Primer trabajo como cocinero.</li>
-            <h2 id="contacto">Contacto</h2>
-            <p>Correo:  </p>
-                <a href="mailto:jordi.garrigo.morato@gmail.com">jordi.garrigo.morato@gmail.com</a>
 
-            <br>
-            <br>
-            <a href="inicio.html" class="boton">Inicio</a>
+                </ol>
+            </div>
+        </section>
+         <section class="tarjeta contacto" id="contacto">
+            <h2>Contacto</h2>
+        <p>Correo: 
+        <a href="mailto:jordi.garrigo.morato@gmail.com">jordi.garrigo.morato@gmail.com</a>
+        </p>
+        <br>
+        <br>
+        <a href="inicio.html" class="boton">Aprender más </a>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Todos los derechos reservados a Jordi Garrigó.</p>
-        </footer>
-        </body>
-        </html>
+    </footer>
+</body>
+
+</html>

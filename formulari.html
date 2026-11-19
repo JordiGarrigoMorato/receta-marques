@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,122 +8,159 @@
   <link rel="stylesheet" href="formulari.css">
 </head>
 
- <header>
-    <h1>🍴 Sabores de Casa</h1>
-    <nav>
-      <a href="inicio.html">Inicio</a>
-      <a href="Boton.html" class="activo">Contacto</a>
-    </nav>
-  </header>
-   <main>
-    <form>
+<header>
+  <h1>🍴 Sabores de Casa</h1>
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="Boton.html" class="activo">Contacto</a>
+  </nav>
+</header>
+<main>
+  <form>
 
     <h2>Contáctanos</h2>
-  <fieldset>
-        <legend>🧑‍🍳 Tus datos</legend>
-         <div>
-          <div>
-            <label for="nombre">Nombre <span class="obligatorio">*</span></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-          </div><br>
-          <div>
-            <label for="apellidos">Apellidos</label>
-            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos">
-          </div><br>
-          <div >
-            <label for="email">Correo electrónico <span class="obligatorio">*</span></label>
-            <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
-          </div><br>
-          <div>
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" pattern="[0-9 +]{9,15}">
-          </div>
-        </div>
-      </fieldset>
-
-
-       <fieldset>
-        <legend>🍽️ Tu visita</legend>
+    <fieldset>
+      <legend>🧑‍🍳 Tus datos</legend>
+      <div>
         <div>
-            <label for="comensales">Número de comensales</label>
-            <input type="number" id="comensales" name="comensales" min="1" max="20" value="2">
-          </div><br>
-          <div>
-            <label for="menu">Tipo de plato</label>
-            <select id="menu" name="menu">
-              <option value="">-- Elige una opción --</option>
-              <option value="carta">Cocina asiatica</option>
-              <option value="degustacion">Cocina mediterranea</option>
-              <option value="diario">Cocina mexicana</option>
-              <option value="infantil">Cocina italiana</option>
-            </select>
+          <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
         </div><br>
         <div>
-          <label>Tu plato favorito</label>
-          <div>
-            <label><input type="radio" name="plato" value="carne" checked> 🥩 Carne</label>
-            <label><input type="radio" name="plato" value="pescado"> 🐟 Pescado</label>
-            <label><input type="radio" name="plato" value="vegetariano"> 🥗 Vegetariano</label>
-            <label><input type="radio" name="plato" value="postre"> 🍰 Postres</label>
-          </div><br>
-        </div>
-
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos">
+        </div><br>
         <div>
-          <label>Alergias o intolerancias</label>
-          <div>
-            <label><input type="checkbox" name="alergia" value="gluten"> Gluten</label>
-            <label><input type="checkbox" name="alergia" value="lactosa"> Lactosa</label>
-            <label><input type="checkbox" name="alergia" value="frutos-secos"> Frutos secos</label>
-            <label><input type="checkbox" name="alergia" value="marisco"> Marisco</label>
-          </div>
-        </div>
-      </fieldset>
-
-           <fieldset>
-        <legend>💬 Tu mensaje</legend>
+          <label for="email">Correo electrónico <span class="obligatorio">*</span></label>
+          <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+        </div><br>
         <div>
-          <label for="mensaje">Comentarios <span class="obligatorio">*</span></label>
-          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuentanos qué plato te gustaria que fuese el siguiente..." required></textarea>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" pattern="[0-9 +]{9,15}">
         </div>
-        <div>
-          <label><input type="checkbox" name="privacidad" value="si" required> Acepto la política de privacidad <span class="obligatorio">*</span></label>
-        </div>
-      </fieldset>
-         <div class="botones">
-        <button type="submit">Enviar mensaje</button>
-        <button type="reset">Borrar formulario</button>
       </div>
-    </form>
-       <div class="leyenda">
-      <span >✔Disponible</span>
-      <br> 
-      <span >✘Ocupado</span>     
-    <br><button><a href="Boton.html" class="boton">Información del chef</a></button>
-    </div>
-    <div>
-      <table>
-        <caption>Horario de contacto</caption>
-        <thead>
-          <tr>
-            <th >Día</th>
-            <th >Disponibilidad</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><th >Lunes</th>     <td class="no">✔ </td></tr>     
-          <tr><th>Martes</th>    <td class="si">✔ </td></tr>     
-          <tr><th>Miércoles</th> <td class="si">✔ </td></tr>       
-          <tr><th >Jueves</th>    <td class="si">✔ </td></tr>       
-          <tr><th >Viernes</th>   <td class="si">✔ </td></tr>       
-          <tr><th>Sábado</th>    <td class="parcial">✘ </td></tr>
-          <tr><th >Domingo</th>   <td class="si">✘ </td></tr>    
-        </tbody>
-      </table>
-    </div>
+    </fieldset>
 
-    <button><a href="inicio.html" class="boton">Aprender más</a></button>
-  </main>
-   <footer>
-    <p>© 2024 Sabores de Casa. Todos los derechos reservados.</p>
-    </footer>
-    </html>
+
+    <fieldset>
+      <legend>🍽️ Tu visita</legend>
+      <div>
+        <label for="comensales">Número de comensales</label>
+        <input type="number" id="comensales" name="comensales" min="1" max="20" value="2">
+      </div><br>
+      <div>
+        <label for="menu">Tipo de plato</label>
+        <select id="menu" name="menu">
+          <option value="">-- Elige una opción --</option>
+          <option value="carta">Cocina asiatica</option>
+          <option value="degustacion">Cocina mediterranea</option>
+          <option value="diario">Cocina mexicana</option>
+          <option value="infantil">Cocina italiana</option>
+        </select>
+      </div><br>
+      <div>
+        <label>Tu plato favorito</label>
+        <div>
+          <label><input type="radio" name="plato" value="carne" checked> 🥩 Carne</label>
+          <label><input type="radio" name="plato" value="pescado"> 🐟 Pescado</label>
+          <label><input type="radio" name="plato" value="vegetariano"> 🥗 Vegetariano</label>
+          <label><input type="radio" name="plato" value="postre"> 🍰 Postres</label>
+        </div><br>
+      </div>
+
+      <div>
+        <label>Alergias o intolerancias</label>
+        <div>
+          <label><input type="checkbox" name="alergia" value="gluten"> Gluten</label>
+          <label><input type="checkbox" name="alergia" value="lactosa"> Lactosa</label>
+          <label><input type="checkbox" name="alergia" value="frutos-secos"> Frutos secos</label>
+          <label><input type="checkbox" name="alergia" value="marisco"> Marisco</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>💬 Tu mensaje</legend>
+      <div>
+        <label for="mensaje">Comentarios <span class="obligatorio">*</span></label>
+        <textarea id="mensaje" name="mensaje" rows="5"
+          placeholder="Cuentanos qué plato te gustaria que fuese el siguiente..." required></textarea>
+      </div>
+      <div>
+        <label><input type="checkbox" name="privacidad" value="si" required> Acepto la política de privacidad <span
+            class="obligatorio">*</span></label>
+      </div>
+    </fieldset>
+    <div class="botones">
+      <button type="submit">Enviar mensaje</button>
+      <button type="reset">Borrar formulario</button>
+    </div>
+  </form>
+   <section class="dos-col">
+      <div class="tarjeta">
+        <h2>Horario de contacto</h2>
+        <div class="leyenda">
+          <span>Disponible</span>
+          <span>Ocupado</span>
+        </div>
+        <table>
+          <caption>Días en los que puedes contactarnos</caption>
+          <thead>
+            <tr>
+          <th>Día</th>
+          <th>Disponibilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Lunes</th>
+          <td >✔ Disponible </td>
+        </tr>
+        <tr>
+          <th>Martes</th>
+          <td>✔ Disponible </td>
+        </tr>
+        <tr>
+          <th>Miércoles</th>
+          <td>✔ Disponible </td>
+        </tr>
+        <tr>
+          <th>Jueves</th>
+          <td>✔ Disponible </td>
+        </tr>
+        <tr>
+          <th>Viernes</th>
+          <td>✔ Disponible </td>
+        </tr>
+        <tr>
+          <th>Sábado</th>
+          <td >✘ Ocupado </td>
+        </tr>
+        <tr>
+          <th>Domingo</th>
+          <td>✘ Ocupado </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tarjeta">
+        <h2>Datos de contacto</h2>
+        <ul class="datos">
+          <li><span></span> <a href="mailto:jordi.garrigo.morato@gmail.com">jordi.garrigo.morato@gmail.com</a></li>
+          <li><span></span> Teléfono: 644 400 422</li>
+          <li><span></span> Calle del Sabor, 12</li>
+          <li><span></span> Respondemos en menos de 24 horas</li>
+        </ul>
+        <div class="botones">
+         <button><a href="boton.html" class="boton">Información del chef</a></button><br> <br>
+          <button><a href="inicio.html" class="boton">Volver al inicio</a></button>
+        </div>
+      </div>
+    </section>
+
+</main>
+<footer>
+  <p>© 2024 Sabores de Casa. Todos los derechos reservados.</p>
+</footer>
+
+</html>

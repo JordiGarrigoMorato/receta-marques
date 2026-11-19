@@ -17,7 +17,10 @@ nav {
     padding: 10px 20px;
     text-align: center;
     border-radius: 10px;
-    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 30px;
 }
 
 nav a {
@@ -25,6 +28,9 @@ nav a {
             text-decoration: none;
             margin: 0 15px;
             font-weight: 600;}
+nav a:hover {
+    text-decoration: underline;
+}
 
 header img {
     width: 220px;
@@ -34,9 +40,22 @@ header img {
 }
 
 main{
-  padding: 20px 50px; 
+  padding: 20px 50px;   
 }
 
+.dos-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.tarjeta {
+    background: #fff;
+    border: 1px solid #d9c7b4;
+    border-radius: 10px;
+    padding: 5px 25px 20px;
+    box-shadow: 0 2px 8px rgba(122, 46, 29, 0.12);
+}
 h2 { color: #7a2e1d; }
 
 
@@ -72,9 +91,19 @@ a {
     text-decoration: none;
 }
 
-.boton:hover { background: #5c2113; }
+.boton:hover {
+     background: #5c2113; 
+}
+
+.contacto {
+    text-align: center;
+}
+
 
 footer {
     text-align: center;
-    
+    padding: 20px;
+    background-color: none;
+    color: #777777;
+    margin-top: auto;
 }
