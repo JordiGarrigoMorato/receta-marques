@@ -98,6 +98,23 @@ button {
     cursor: pointer;
 
 }
+button {
+    display: inline-block;
+    background-color: #0d8397dc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none
+
+}
+
+.boton {
+    display: inline-block;
+   color: #fff;
+  text-decoration: none;
+}
 
 button[type=reset] {
     background: tomato;
